@@ -66,7 +66,7 @@ namespace esphome
                         return;
 
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 
                 // Espresso
@@ -76,7 +76,7 @@ namespace esphome
                     if (action == SELECT_ESPRESSO)
                         return;
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 
                 // Hot water
@@ -86,7 +86,7 @@ namespace esphome
                     if (action == SELECT_HOT_WATER)
                         return;
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 
 #ifdef PHILIPS_EP2220
@@ -97,7 +97,7 @@ namespace esphome
                     if (action == SELECT_STEAM)
                         return;
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 #endif
 #ifdef PHILIPS_EP2235
@@ -108,7 +108,7 @@ namespace esphome
                     if (action == SELECT_CAPPUCCINO)
                         return;
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 #endif
 #ifdef PHILIPS_EP3243
@@ -119,7 +119,7 @@ namespace esphome
                     if (action == SELECT_LATTE)
                         return;
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 
                 // Americano
@@ -129,7 +129,7 @@ namespace esphome
                     if (action == SELECT_AMERICANO)
                         return;
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 
                 // Cappuccino
@@ -139,7 +139,7 @@ namespace esphome
                     if (action == SELECT_CAPPUCCINO)
                         return;
                     delay(BUTTON_SEQUENCE_DELAY);
-                    action = PLAY_PAUSE;
+
                 }
 #endif
                 // press/play or subsequent press/play
