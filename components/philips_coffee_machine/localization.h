@@ -162,7 +162,7 @@ namespace esphome
         const std::string state_off = "Off";
         const std::string state_idle = "Idle";
         const std::string state_cleaning = "Cleaning";
-        const std::string state_preparing = "Preparing";
+        const std::string state_preparing = "Preparingggg";
         const std::string state_water_empty = "Water empty";
         const std::string state_waste_warning = "Waste container warning";
         const std::string state_error = "Error";
