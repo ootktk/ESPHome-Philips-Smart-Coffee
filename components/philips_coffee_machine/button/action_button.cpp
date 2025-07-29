@@ -59,87 +59,54 @@ namespace esphome
             {
                 auto action = action_;
                 // Coffee
-                if (action == SELECT_COFFEE || action == MAKE_COFFEE)
+                if (action == SELECT_COFFEE)
                 {
                     write_array(command_press_1);
-                    if (action == SELECT_COFFEE)
-                        return;
-
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 
                 // Espresso
-                if (action == SELECT_ESPRESSO || action == MAKE_ESPRESSO)
+                if (action == SELECT_ESPRESSO)
                 {
                     write_array(command_press_2);
-                    if (action == SELECT_ESPRESSO)
-                        return;
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 
                 // Hot water
-                if (action == SELECT_HOT_WATER || action == MAKE_HOT_WATER)
+                if (action == SELECT_HOT_WATER )
                 {
                     write_array(command_press_3);
-                    if (action == SELECT_HOT_WATER)
-                        return;
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 
 #ifdef PHILIPS_EP2220
                 // Steam
-                if (action == SELECT_STEAM || action == MAKE_STEAM)
+                if (action == SELECT_STEAM)
                 {
                     write_array(command_press_4);
-                    if (action == SELECT_STEAM)
-                        return;
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 #endif
 #ifdef PHILIPS_EP2235
                 // Cappuccino
-                if (action == SELECT_CAPPUCCINO || action == MAKE_CAPPUCCINO)
+                if (action == SELECT_CAPPUCCINO)
                 {
                     write_array(command_press_4);
-                    if (action == SELECT_CAPPUCCINO)
-                        return;
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 #endif
 #ifdef PHILIPS_EP3243
                 // Latte
-                if (action == SELECT_LATTE || action == MAKE_LATTE)
+                if (action == SELECT_LATTE
                 {
                     write_array(command_press_4);
-                    if (action == SELECT_LATTE)
-                        return;
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 
                 // Americano
-                if (action == SELECT_AMERICANO || action == MAKE_AMERICANO)
+                if (action == SELECT_AMERICANO)
                 {
                     write_array(command_press_5);
-                    if (action == SELECT_AMERICANO)
-                        return;
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 
                 // Cappuccino
-                if (action == SELECT_CAPPUCCINO || action == MAKE_CAPPUCCINO)
+                if (action == SELECT_CAPPUCCINO)
                 {
                     write_array(command_press_6);
-                    if (action == SELECT_CAPPUCCINO)
-                        return;
-                    delay(BUTTON_SEQUENCE_DELAY);
-
                 }
 #endif
                 // press/play or subsequent press/play
